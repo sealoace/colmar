@@ -1,0 +1,382 @@
+/* 0. Universal Properties */
+
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Lato";
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+nav li {
+  font-weight: 300;
+  list-style: none;
+  display: inline;
+  margin: auto 8px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.leftside {
+  padding: 32px 24px;
+  width: 60%;
+  border-right: 1px solid lightgray;
+}
+
+.leftside img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rightside {
+  padding: 0px;
+  max-width: 40%;
+}
+
+.sidebarimg {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.sidebartext {
+  width: 65%;
+  height: auto;
+}
+
+.sidebarimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarblock {
+  display: flex;
+}
+
+.highlight {
+  background-color: lightgray;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* 1. Header */
+
+/* 1.1 Top Bar */
+
+.topbar {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 24px;
+}
+
+.topbar div {
+  display: flex;
+  align-items: center;
+}
+
+.topbar img {
+  height: 32px;
+  width: auto;
+}
+
+/* 2. Banner */
+
+#banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+}
+
+#banner a {
+  padding: 8px 100px;
+  background-color: darkgray;
+}
+
+#banner h3 {
+  text-align: left;
+}
+
+/* 3. Info Panel */
+
+#information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#information p {
+  font-weight: 300;
+}
+
+#information p.citation {
+  font-weight: 400;
+}
+
+#information a {
+  color: darkturquoise;
+}
+
+#information h3 {
+  text-align: left;
+}
+
+/* 4. Start Learning */
+
+/* 4.1 Start Learning Grid, Desktop */
+
+#startlearning {
+  background-color: lightgray;
+}
+
+#startlearning h2 {
+  padding-top: 32px;
+}
+
+.grid {
+  padding: 32px 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.griditem {
+  margin: 16px;
+  background-color: white;
+}
+
+.griditem p {
+  font-weight: 300;
+}
+
+.griditemimg {
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+.griditemimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.griditemtext {
+  max-width: 20rem;
+  margin: 0px;
+  padding: 16px;
+}
+
+/* 4.2 Start Learning List, Mobile */
+
+#startlearning ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#startlearning li {
+  background-color: lightgray;
+  margin: 4px auto;
+  padding: 16px;
+}
+
+/* 5. Thesis Exhibit */
+
+.exhibit {
+  display: flex;
+}
+
+.leftside video {
+  width: 100%;
+  height: auto;
+}
+
+#thesisexhibit h2 {
+  padding: 16px 0;
+}
+
+#thesisexhibit p {
+  font-weight: 300;
+}
+
+#thesisexhibit .leftside {
+  padding: 0px;
+  border-right: none;
+}
+
+#thesisexhibit .rightside {
+  margin-left: 24px;
+}
+
+#thesisexhibit .sidebartext h3 {
+  text-align: left;
+}
+
+/* 6. Footer */
+
+.bottombar {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+
+/* 7. Media Queries */
+
+/* 7.1 Hide or Show Elements Depending on Screen Size */
+
+@media only screen and (max-width: 470px) {
+  .mobilehide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 471px) {
+  .fullhide {
+    display: none;
+  }
+}
+
+/* 7.2 Convert flex-direction Attribute to column Depending on Screen Size */
+
+@media only screen and (max-width: 470px) {
+  #banner,
+  #information,
+  .exhibit,
+  .gridrow,
+  .sidebarblock {
+    flex-direction: column;
+  }
+}
+
+/* 7.3 Convert Element Sizes Depending on Screen Size */
+
+@media only screen and (max-width: 470px) {
+  h1,
+  h2,
+  h3,
+  video,
+  .container,
+  .sidebarblock,
+  .sidebartext,
+  .leftside,
+  .gridrow,
+  .grid,
+  .rightside {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .sidebarimg {
+    padding: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #banner a {
+    display: block;
+    text-align: center;
+  }
+
+  #banner .rightside {
+    width: 90%;
+  }
+
+  #banner .rightside h1,
+  #banner .rightside h3,
+  #banner .rightside a {
+    margin: 16px 0;
+  }
+
+  .fullhide.topbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* 7.4 Convert Miscellaneous Element Attributes Depending on Screen Size */
+
+@media only screen and (max-width: 470px) {
+
+  #information h3 {
+    text-align: left;
+  }
+
+  .highlight,
+  #startlearning {
+    background-color: white;
+  }
+
+  #startlearning {
+    border: 1px solid lightgray;
+  }
+
+  #startlearning h2 {
+    padding-top: 16px;
+  }
+
+  .sidebartext p,
+  h1,
+  h3 {
+    padding: 0px 24px;
+  }
+
+}
