@@ -306,9 +306,7 @@ nav li:last-child {
 /* 7.3 Convert Element Sizes Depending on Screen Size */
 
 @media only screen and (max-width: 470px) {
-  h1,
   h2,
-  h3,
   video,
   .container,
   .sidebarblock,
@@ -373,9 +371,9 @@ nav li:last-child {
     padding-top: 16px;
   }
 
-  .sidebartext p,
-  h1,
-  h3 {
+  #information .sidebartext p,
+  #information .sidebartext h1,
+  #information .sidebartext h3 {
     padding: 0px 24px;
   }
 
